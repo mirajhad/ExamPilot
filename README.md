@@ -23,7 +23,7 @@ design involves three technical activities - design, coding, implementation and 
 required to build and verify the software.
 
 # TEAM MEMBER:-
-MD. MIRAJ ANSARI
+MD. MIRAJ ANSARI </br>
 NITYA PANDEY
 
 <img src="https://github.com/mirajhad/Online-Examination-System/blob/master/images1/home.png"></img>
