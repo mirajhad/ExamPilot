@@ -24,7 +24,9 @@ required to build and verify the software.
 
 # TEAM MEMBER:-
 MD. MIRAJ ANSARI </br>
-NITYA PANDEY
+NITYA PANDEY</br>
+
+# SCREENSHOTS
 
 <img src="https://github.com/mirajhad/Online-Examination-System/blob/master/images1/home.png"></img>
 <img src="https://github.com/mirajhad/Online-Examination-System/blob/master/images1/user.png"></img>
