@@ -6,7 +6,7 @@ examination system is described from the stand point of the research effort, end
 software development.
 </p>
 
-# SCOPE
+## SCOPE
 This application is used to conduct online examination. The students can sit at individual 
 terminals and login to write the exam in the given duration. The questions have to be given to the 
 students. This application will perform correction, display the result immediately and also store it 
@@ -15,18 +15,18 @@ application provides the Instructor to add questions to the exam, modify questio
 a particular exam. This application takes care of authentication of the administrator, Instructor as 
 well as the student.
 
-# SYSTEM DESIGN
+## SYSTEM DESIGN
 Design is the first step in the development phase for any techniques and principles for the 
 purpose of defining a device, a process or system in sufficient detail to permit its physical 
 realization. Once the software requirements have been analysed and specified the software 
 design involves three technical activities - design, coding, implementation and testing that are 
 required to build and verify the software.
 
-# TEAM MEMBER:-
+## TEAM MEMBER:-
 MD. MIRAJ ANSARI </br>
 NITYA PANDEY</br>
 
-# SCREENSHOTS
+## SCREENSHOTS
 
 <img src="https://github.com/mirajhad/Online-Examination-System/blob/master/images1/home.png"></img>
 <img src="https://github.com/mirajhad/Online-Examination-System/blob/master/images1/user.png"></img>
