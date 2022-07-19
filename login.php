@@ -25,18 +25,20 @@
         <input class="btn" type="submit" name="submit" value="Login"/>
         <a style="text-decoration:none" href="register.php" class="btn">Register</a>
     </div>
-    
+
 </form>
 </body>
 </html>
- 
+
 
  <?php
+
  include("config.php");
+
  if(isset($_POST['submit']))
  {
-     $username = $_POST['username'];
-     $password = $_POST['password'];
+     $username = htmlspecialchars($_POST['username']);
+     $password = htmlspecialchars($_POST['password']);
      $query = "select * from registration where username='$username' && password='$password'";
      $data = mysqli_query($con, $query);
      $total = mysqli_num_rows($data);
@@ -48,5 +50,5 @@
          echo "Login Fialed";
      }
  }
- 
+
  ?>
