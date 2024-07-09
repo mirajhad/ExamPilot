@@ -1,3 +1,23 @@
+<?php
+ include("config.php");
+ if(isset($_POST['submit']))
+ {
+     $username = $_POST['username'];
+     $password = $_POST['password'];
+     $query = "select * from users where username='$username' && password='$password'";
+     $data = mysqli_query($con, $query);
+     $total = mysqli_num_rows($data);
+     if($total == 1)
+     {
+         $_SESSION['username'] = $username;
+         header('location:home.php');
+     }else{
+         echo "Login Fialed";
+     }
+ }
+ 
+ ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,22 +51,3 @@
 </html>
  
 
- <?php
- include("config.php");
- if(isset($_POST['submit']))
- {
-     $username = $_POST['username'];
-     $password = $_POST['password'];
-     $query = "select * from registration where username='$username' && password='$password'";
-     $data = mysqli_query($con, $query);
-     $total = mysqli_num_rows($data);
-     if($total == 1)
-     {
-         $_SESSION['username'] = $username;
-         header('location:home.php');
-     }else{
-         echo "Login Fialed";
-     }
- }
- 
- ?>

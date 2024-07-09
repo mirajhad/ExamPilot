@@ -1,3 +1,24 @@
+<?php
+include("config.php");
+
+if($_POST['submit'])
+{
+	
+	$email = $_POST['email'];
+    $college = $_POST['college'];
+    $username = $_POST['username'];
+	$password= $_POST['password'];
+
+	$query=mysqli_query($con,"insert into users (email,college,username,password) values('$email','$college','$username','$password')");
+if($query)
+{
+	echo "<script>alert('Successfully Registered. Now you can Login');</script>";
+	
+}
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,24 +61,3 @@
 </html>
 
 
-<?php
-
-include("config.php");
-
-if($_POST['submit'])
-{
-	
-	$email = $_POST['email'];
-    $college = $_POST['college'];
-    $username = $_POST['username'];
-	$password= $_POST['password'];
-
-	$query=mysqli_query($con,"insert into registration (email,college,username,password) values('$email','$college','$username','$password')");
-if($query)
-{
-	echo "<script>alert('Successfully Registered. Now you can Login');</script>";
-	
-}
-}
-
-?>

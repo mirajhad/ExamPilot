@@ -1,3 +1,24 @@
+<?php
+include("config.php");
+
+if($_POST['submit'])
+{
+	
+	$name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+	$message= $_POST['message'];
+
+	$query=mysqli_query($con,"insert into contact(name,email,phone,message) values('$name','$email','$phone','$message')");
+if($query)
+{
+	echo "<script>alert('Queries sent');</script>";
+	
+}
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,22 +132,3 @@
 </body>
 </html>
 
-<?php
-include("config.php");
-
-if($_POST['submit'])
-{
-	
-	$name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-	$message= $_POST['message'];
-
-	$query=mysqli_query($con,"insert into contact(name,email,phone,message) values('$name','$email','$phone','$message')");
-if($query)
-{
-	echo "<script>alert('Queries sent');</script>";
-	
-}
-}
-?>
